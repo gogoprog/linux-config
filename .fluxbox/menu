@@ -16,15 +16,16 @@
 #     session.menuFile: ~/.fluxbox/my-menu
 [begin] (Fluxbox-1.1.1)
 [encoding] {UTF-8}
-	[exec] (urxvt) {urxvt}
-	[exec] (urxvt-root) {urxvt -e su}
+	[exec] (rxvt) {rxvt}
+	[exec] (rxvt-root) {rxvt -e su}
 	[exec] (xterm) {xterm}
 	[exec] () {}
-	[exec] (alsamixer) {urxvt -e alsamixer}
+	[exec] (alsamixer) {rxvt -e alsamixer}
 	[exec] () {}
 	[exec] (thunar) {thunar}
 	[exec] () {}
   	[exec]   (firefox) {firefox}
+	[exec]   (chromium) {chromium}
 	[exec]   (pidgin) {pidgin}
 	[exec]   (xchat) {xchat}
 	[exec]   (vuze) {vuze}
@@ -34,7 +35,7 @@
 	[exec]   (gedit) {gedit}
 	[exec]   (scite) {scite}
 [submenu] (System Tools)
-      [exec]   (htop) {xterm -e htop}
+      [exec]   (htop) {rxvt -e htop}
 [end]
 [submenu] (Fluxbox menu)
       [config] (Configure)
