@@ -32,6 +32,7 @@
 	[exec] () {}
 	[exec]   (eclipse) {eclipse}
 	[exec]   (monodevelop) {monodevelop}
+	[exec]   (sublime-text) {subl}
 	[exec]   (gedit) {gedit}
 	[exec]   (scite) {scite}
 [submenu] (System Tools)

@@ -4,5 +4,5 @@ cp .X* ~/
 cp .bashrc ~/
 cp .dir_* ~/
 cp .fluxbox/* ~/.fluxbox/
-cp .g* ~/
+cp .gtk* ~/
 cp .zsh* ~/
