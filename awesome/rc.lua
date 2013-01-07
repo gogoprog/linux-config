@@ -104,8 +104,8 @@ local term_icon = "/usr/share/icons/gnome/16x16/apps/openterm.png"
 local firefox_icon = "/usr/lib/firefox/chrome/icons/default/default16.png"
 
 local myworkmenu = {
-   { "mojito", "work_in.sh ~/code/mojito" },
-   { "td", "work_in.sh ~/code/ggp/td" },
+   { "mojito", "work_in.sh /home/gogoprog/code/mojito" },
+   { "td", "work_in.sh /home/gogoprog/code/ggp/td" },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
