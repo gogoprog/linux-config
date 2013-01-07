@@ -37,8 +37,9 @@ source $ZSH/oh-my-zsh.sh
 
 # conf
 export SVN_EDITOR="leafpad"
-export MOJITO="/home/gogoprog/code/mojito"
+export MOJITO="$HOME/code/mojito"
+export SDL_AUDIODRIVER="alsa"
 
 # paths
-export PATH="$PATH:/home/gogoprog/code/scripts:/home/gogoprog/ruby/:$MOJITO/TOOLS/PROJECT_MAKER/:$MOJITO/MOJITO/APP/TOOLS/LINUX/:/opt/slickedit/bin/"
+export PATH="$PATH:$HOME/scripts:$HOME/code/scripts:$MOJITO/TOOLS/PROJECT_MAKER/:$MOJITO/MOJITO/APP/TOOLS/LINUX/:/opt/slickedit/bin/"
 
