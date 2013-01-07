@@ -10,3 +10,4 @@ rxvt*geometry: 80x24
 rxvt*scrollBar_right: true
 rxvt*cursorBlink: true
 rxvt*cursorColor: #5EFF24
+rxvt*saveLines: 20000

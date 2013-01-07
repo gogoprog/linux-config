@@ -60,13 +60,13 @@ local layouts =
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
-    awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.spiral,
-    awful.layout.suit.spiral.dwindle,
+--    awful.layout.suit.fair,
+--    awful.layout.suit.fair.horizontal,
+--    awful.layout.suit.spiral,
+--    awful.layout.suit.spiral.dwindle,
     awful.layout.suit.max,
     awful.layout.suit.max.fullscreen,
-    awful.layout.suit.magnifier
+--    awful.layout.suit.magnifier
 }
 -- }}}
 
@@ -99,8 +99,9 @@ myawesomemenu = {
 local separator = { "-" }
 local pidgin_icon = "/usr/share/icons/hicolor/16x16/apps/pidgin.png"
 local chromium_icon = "/usr/share/icons/hicolor/16x16/apps/chromium.png"
-local thunar_icon = "/usr/share/icons/oxygen/16x16/places/folder-documents.png"
+local thunar_icon = "/usr/share/icons/gnome/16x16/places/folder.png"
 local term_icon = "/usr/share/icons/gnome/16x16/apps/openterm.png"
+local firefox_icon = "/usr/lib/firefox/chrome/icons/default/default16.png"
 
 local myworkmenu = {
    { "mojito", "work_in.sh ~/code/mojito" },
@@ -113,6 +114,7 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                     separator,
                                     { "pidgin", "pidgin", pidgin_icon },
                                     { "chromium", "chromium", chromium_icon },
+                                    { "firefox", "firefox", firefox_icon },
                                     separator,
                                     { "thunar", "thunar", thunar_icon },
                                     separator,
