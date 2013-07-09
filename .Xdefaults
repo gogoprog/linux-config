@@ -1,7 +1,5 @@
 rxvt*transparent:true
 rxvt*shading:10
-#rxvt*font: xft:Courier New:pixelsize=14
-#rxvt*boldFont: xft:Courier New:pixelsize=14
 rxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
 rxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
 rxvt*background: Black
@@ -11,3 +9,15 @@ rxvt*scrollBar_right: true
 rxvt*cursorBlink: true
 rxvt*cursorColor: #5EFF24
 rxvt*saveLines: 20000
+urxvt*transparent:true
+urxvt*shading:10
+urxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
+urxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
+urxvt*background: Black
+urxvt*foreground: White
+urxvt*geometry: 80x24
+urxvt*scrollBar_right: true
+urxvt*cursorBlink: true
+urxvt*cursorColor: #5EFF24
+urxvt*saveLines: 20000
+
