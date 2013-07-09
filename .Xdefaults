@@ -5,19 +5,28 @@ rxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
 rxvt*background: Black
 rxvt*foreground: White
 rxvt*geometry: 80x24
-rxvt*scrollBar_right: true
 rxvt*cursorBlink: true
 rxvt*cursorColor: #5EFF24
 rxvt*saveLines: 20000
+
 urxvt*transparent:true
 urxvt*shading:10
-urxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
-urxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
 urxvt*background: Black
 urxvt*foreground: White
 urxvt*geometry: 80x24
-urxvt*scrollBar_right: true
 urxvt*cursorBlink: true
 urxvt*cursorColor: #5EFF24
 urxvt*saveLines: 20000
+urxvt*scrollBar:         false
+
+! Extensions
+urxvt*perl-lib:        /usr/lib/urxvt/perl/
+urxvt*perl-ext-common: default,matcher,searchable-scrollback
+urxvt*urlLauncher:     /usr/bin/firefox
+urxvt*matcher.button:  1
+
+!  - catch ugly URLs
+urxvt.cutchars:        `()'*<>[]{|}"
+
+urxvt*font: xft:dina:pixelsize=14
 
