@@ -1,3 +1,7 @@
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.rgba: rgb
+
 rxvt*transparent:true
 rxvt*shading:10
 rxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
@@ -9,7 +13,7 @@ rxvt*cursorBlink: true
 rxvt*cursorColor: #5EFF24
 rxvt*saveLines: 20000
 
-urxvt*transparent:true
+urxvt*transparent:false
 urxvt*shading:10
 urxvt*background: Black
 urxvt*foreground: White
@@ -20,13 +24,12 @@ urxvt*saveLines: 20000
 urxvt*scrollBar:         false
 
 ! Extensions
-urxvt*perl-lib:        /usr/lib/urxvt/perl/
-urxvt*perl-ext-common: default,matcher,searchable-scrollback
-urxvt*urlLauncher:     /usr/bin/firefox
-urxvt*matcher.button:  1
+urxvt*urlLauncher:     /usr/bin/chromium
+urxvt.perl-ext-common:  default,matcher
+urxvt.url-launcher:      /usr/bin/firefox
+urxvt.matcher.button:   1
 
-!  - catch ugly URLs
-urxvt.cutchars:        `()'*<>[]{|}"
+urxvt*font: xft:Monaco:pixelsize=13
 
-urxvt*font: xft:dina:pixelsize=14
+
 
