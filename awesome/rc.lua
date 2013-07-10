@@ -41,7 +41,7 @@ end
 beautiful.init("/usr/share/awesome/themes/zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "rxvt"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "leafpad"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -71,11 +71,16 @@ local layouts =
 -- }}}
 
 -- {{{ Wallpaper
-if beautiful.wallpaper then
+--[[if beautiful.wallpaper then
     for s = 1, screen.count() do
         gears.wallpaper.maximized(beautiful.wallpaper, s, true)
     end
-end
+end]]
+    gears.wallpaper.maximized("/home/gogoprog/various/wp_left.jpg",1,true)
+    if screen.count() > 1 then
+      gears.wallpaper.maximized("/home/gogoprog/various/wp_right.jpg",2,true)
+    end
+
 -- }}}
 
 -- {{{ Tags
@@ -101,10 +106,11 @@ local pidgin_icon = "/usr/share/icons/hicolor/16x16/apps/pidgin.png"
 local chromium_icon = "/usr/share/icons/hicolor/16x16/apps/chromium.png"
 local thunar_icon = "/usr/share/icons/gnome/16x16/places/folder.png"
 local term_icon = "/usr/share/icons/gnome/16x16/apps/openterm.png"
-local firefox_icon = "/usr/lib/firefox/chrome/icons/default/default16.png"
+local firefox_icon = "/usr/share/icons/hicolor/16x16/apps/firefox.png"
 
 local myworkmenu = {
    { "mojito", "work_in.sh /home/gogoprog/code/mojito" },
+   { "ce", "work_in.sh /home/gogoprog/code/component-engine" },
    { "td", "work_in.sh /home/gogoprog/code/ggp/td" },
 }
 
@@ -376,6 +382,7 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
+   { rule = { class = "Steam" }, properties = { floating = true } },
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
@@ -447,3 +454,5 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+os.execute("setxkbmap be")
