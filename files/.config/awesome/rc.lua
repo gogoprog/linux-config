@@ -76,10 +76,20 @@ local layouts =
         gears.wallpaper.maximized(beautiful.wallpaper, s, true)
     end
 end]]
-    gears.wallpaper.maximized("/home/gogoprog/various/wp_left.jpg",1,true)
-    if screen.count() > 1 then
-      gears.wallpaper.maximized("/home/gogoprog/various/wp_right.jpg",2,true)
+
+    function file_exists(name)
+       local f=io.open(name,"r")
+       if f~= nil then io.close(f) return true else return false end
     end
+
+    function set_wallpaper(wp, ns)
+      if file_exists(wp) and ns <= screen.count() then
+        gears.wallpaper.maximized(wp,ns,true)
+      end
+    end
+
+    set_wallpaper("/home/gogoprog/various/wp_left.jpg",1)
+    set_wallpaper("/home/gogoprog/various/wp_right.jpg",2)
 
 -- }}}
 
