@@ -1,6 +1,8 @@
 #!/bin/bash
 
 
-cp files/* ~/ -r
+cp files/* ~/ -rv
+
+cp files/.[a-zA-Z0-9]* ~/ -rv
 
 
