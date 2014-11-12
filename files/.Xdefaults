@@ -13,7 +13,7 @@ rxvt*cursorBlink: true
 rxvt*cursorColor: #5EFF24
 rxvt*saveLines: 20000
 
-urxvt*transparent:false
+urxvt*transparent:true
 urxvt*shading:10
 urxvt*background: Black
 urxvt*foreground: White
