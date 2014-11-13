@@ -37,7 +37,7 @@ source $ZSH/oh-my-zsh.sh
 
 # conf
 export SVN_EDITOR="leafpad"
-export MOJITO="$HOME/code/mojito"
+export MOJITO="$HOME/code/mojito/"
 export SDL_AUDIODRIVER="alsa"
 
 # paths
