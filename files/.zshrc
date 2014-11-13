@@ -44,7 +44,7 @@ export SDL_AUDIODRIVER="alsa"
 export PATH="$PATH:$HOME/scripts:$HOME/code/scripts:/opt/slickedit/bin/:${MOJITO}/MOJITO/APP/TOOLS/LINUX/DEPS/code_assist/BIN"
 
 PROMPT='%{%f%k%b%}
-%{%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%}%~%{%B%F{green}%}$(git_prompt_info)%E%{%f%k%b%}
+%{%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%}%~%{%B%F{green}%}$(git_prompt_info)%E%{%f%b%}
 %{%}$(_prompt_char)%{%} %#%{%f%k%b%} '
 
 RPROMPT='!%{%B%F{cyan}%}%!%{%f%k%b%}'
