@@ -35,13 +35,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# conf
 export SVN_EDITOR="leafpad"
-export MOJITO="$HOME/code/mojito/"
-export SDL_AUDIODRIVER="alsa"
 
 # paths
-export PATH="$PATH:$HOME/scripts:$HOME/code/scripts:/opt/slickedit/bin/:${MOJITO}/MOJITO/APP/TOOLS/LINUX/DEPS/code_assist/BIN"
+export PATH="$PATH:$HOME/scripts:$HOME/code/scripts"
 
 PROMPT='%{%f%k%b%}
 %{%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%}%~%{%B%F{green}%}$(git_prompt_info)%{%f%k%b%}
