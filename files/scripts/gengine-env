@@ -1,11 +1,13 @@
 #!/bin/zsh
 
+pushd .
 cd ~/code/emsdk_portable
 source ./emsdk_env.sh
 
 cd ~/code/gengine-samples/gengine
 source scripts/activate
 
+popd
 zsh -i
 
 
