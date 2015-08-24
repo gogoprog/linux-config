@@ -114,14 +114,12 @@ myawesomemenu = {
 local separator = { "-" }
 local pidgin_icon = "/usr/share/icons/hicolor/16x16/apps/pidgin.png"
 local chromium_icon = "/usr/share/icons/hicolor/16x16/apps/chromium.png"
-local thunar_icon = "/usr/share/icons/gnome/16x16/places/folder.png"
+local fm_icon = "/usr/share/icons/gnome/16x16/places/folder.png"
 local term_icon = "/usr/share/icons/gnome/16x16/apps/openterm.png"
 local firefox_icon = "/usr/share/icons/hicolor/16x16/apps/firefox.png"
 
-local myworkmenu = {
-   { "mojito", "work_in.sh /home/gogoprog/code/mojito" },
-   { "ce", "work_in.sh /home/gogoprog/code/component-engine" },
-   { "td", "work_in.sh /home/gogoprog/code/ggp/td" },
+local devmenu = {
+   { "mechabot", "dev-mechabot.sh" },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
@@ -132,9 +130,9 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
                                     { "chromium", "chromium", chromium_icon },
                                     { "firefox", "firefox", firefox_icon },
                                     separator,
-                                    { "thunar", "thunar", thunar_icon },
+                                    { "pcmanfm-qt", "pcmanfm-qt", fm_icon },
                                     separator,
-                                    { "work in", myworkmenu },
+                                    { "dev start", devmenu },
                                   }
                         })
 
