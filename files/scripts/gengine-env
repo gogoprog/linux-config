@@ -8,6 +8,7 @@ cd ~/code/gengine-samples/gengine
 source scripts/activate
 
 popd
+
+export LD_LIBRARY_PATH=/home/gogoprog/code/gengine-samples/gengine/deps/linux/lib64
+
 zsh -i
-
-
