@@ -2,34 +2,20 @@ Xft.dpi: 96
 Xft.antialias: 1
 Xft.rgba: rgb
 
-rxvt*transparent:true
-rxvt*shading:10
-rxvt*font:*-*-fixed-medium-r-normal--*-110-*-*-*-*-iso8859-1
-rxvt*boldFont:*-*-fixed-bold-r-normal--*-*-110-*-*-*-*-iso8859-1
-rxvt*background: Black
-rxvt*foreground: White
-rxvt*geometry: 80x24
-rxvt*cursorBlink: true
-rxvt*cursorColor: #5EFF24
-rxvt*saveLines: 20000
-
 urxvt*transparent:true
 urxvt*shading:10
-urxvt*background: Black
+urxvt*background:Blackzz
+
 urxvt*foreground: White
 urxvt*geometry: 80x24
 urxvt*cursorBlink: true
-urxvt*cursorColor: #5EFF24
+urxvt*cursorColor: #5eff24
 urxvt*saveLines: 20000
 urxvt*scrollBar:         false
 
 ! Extensions
 urxvt*urlLauncher:     /usr/bin/chromium
-urxvt.perl-ext-common:  default,matcher
 urxvt.url-launcher:      /usr/bin/firefox
 urxvt.matcher.button:   1
 
 urxvt*font: xft:Monaco:pixelsize=13
-
-
-
