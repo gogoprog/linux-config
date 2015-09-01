@@ -4,7 +4,7 @@ Xft.rgba: rgb
 
 urxvt*transparent:true
 urxvt*shading:10
-urxvt*background:Blackzz
+urxvt*background:Black
 
 urxvt*foreground: White
 urxvt*geometry: 80x24
