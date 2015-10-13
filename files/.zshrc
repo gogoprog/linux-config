@@ -55,4 +55,9 @@ bindkey '\e[A' up-line-or-beginning-search
 bindkey '\eOB' down-line-or-beginning-search
 bindkey '\e[B' down-line-or-beginning-search
 
+bindkey '\eOc' forward-word
+bindkey '\eOd' backward-word
+
+bindkey '^H' backward-kill-word
+
 alias fm=pcmanfm-qt
