@@ -1,0 +1,16 @@
+'.platform-linux atom-text-editor':
+  'alt-g': 'symbols-view:go-to-declaration'
+
+'.platform-linux atom-workspace, .platform-win32 atom-workspace':
+  'f4': 'build:error-match'
+
+'.platform-win32, .platform-linux':
+  'ctrl-F': 'project-find:show'
+  'ctrl-f': 'find-and-replace:show'
+  'ctrl-alt-f': 'find-and-replace:show-replace'
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'f3': 'find-and-replace:find-next'
+
+'atom-workspace atom-text-editor':
+  'ctrl-f3': 'find-and-replace:find-next-selected'
