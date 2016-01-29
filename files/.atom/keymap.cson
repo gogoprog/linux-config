@@ -11,6 +11,9 @@
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
   'f3': 'find-and-replace:find-next'
+  'ctrl-d': 'find-and-replace:select-next'
+  'ctrl-e': 'find-and-replace:use-selection-as-find-pattern'
+  'ctrl-u': 'find-and-replace:select-undo'
 
 'atom-workspace atom-text-editor':
   'ctrl-f3': 'find-and-replace:find-next-selected'
