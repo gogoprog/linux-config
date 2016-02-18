@@ -10,6 +10,7 @@
   'ctrl-alt-f': 'find-and-replace:show-replace'
 
 '.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'shift-f3': 'find-and-replace:find-previous'
   'f3': 'find-and-replace:find-next'
   'ctrl-d': 'find-and-replace:select-next'
   'ctrl-e': 'find-and-replace:use-selection-as-find-pattern'
@@ -17,3 +18,4 @@
 
 'atom-workspace atom-text-editor':
   'ctrl-f3': 'find-and-replace:find-next-selected'
+
