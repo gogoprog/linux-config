@@ -10,8 +10,8 @@
       "solarized-dark-syntax"
     ]
     customFileTypes:
-      'source.cpp': [
-        'h'
+      "source.cpp": [
+        "h"
       ]
   editor:
     invisibles: {}
@@ -22,3 +22,4 @@
   tabs: {}
   build:
     saveOnBuild: true
+    panelVisibility: "Keep Visible"
