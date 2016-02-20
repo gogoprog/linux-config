@@ -1,0 +1,24 @@
+"*":
+  "exception-reporting":
+    userId: "43be3f37-4645-210a-01a1-c24558189fc2"
+  welcome:
+    showOnStartup: false
+  "atom-gdb": {}
+  core:
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
+    customFileTypes:
+      'source.cpp': [
+        'h'
+      ]
+  editor:
+    invisibles: {}
+    fontSize: 13
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  tabs: {}
+  build:
+    saveOnBuild: true
