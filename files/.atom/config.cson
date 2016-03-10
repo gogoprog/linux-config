@@ -1,25 +1,30 @@
 "*":
-  "exception-reporting":
-    userId: "43be3f37-4645-210a-01a1-c24558189fc2"
-  welcome:
-    showOnStartup: false
   "atom-gdb": {}
+  build:
+    panelVisibility: "Keep Visible"
+    saveOnBuild: true
   core:
-    themes: [
-      "atom-dark-ui"
-      "solarized-dark-syntax"
-    ]
     customFileTypes:
       "source.cpp": [
         "h"
       ]
+    disabledPackages: [
+      "autocomplete-clang"
+      "open-on-github"
+      "git-diff"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
   editor:
-    invisibles: {}
     fontSize: 13
+    invisibles: {}
     showInvisibles: true
     softWrap: true
     tabLength: 4
+  "exception-reporting":
+    userId: "43be3f37-4645-210a-01a1-c24558189fc2"
   tabs: {}
-  build:
-    saveOnBuild: true
-    panelVisibility: "Keep Visible"
+  welcome:
+    showOnStartup: false
