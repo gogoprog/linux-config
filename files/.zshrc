@@ -34,10 +34,6 @@ plugins=(archlinux git ant sublime svn)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-export SVN_EDITOR="leafpad"
-
-# paths
 export PATH="$PATH:$HOME/scripts:$HOME/code/scripts"
 
 PROMPT='%{%f%k%b%}
