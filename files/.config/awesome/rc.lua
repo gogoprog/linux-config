@@ -119,7 +119,7 @@ local term_icon = "/usr/share/icons/gnome/16x16/apps/openterm.png"
 local firefox_icon = "/usr/share/icons/hicolor/16x16/apps/firefox.png"
 
 local devmenu = {
-   { "mechabot", "dev-mechabot.sh" },
+   { "gengine", "dev-gengine.sh" },
 }
 
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },

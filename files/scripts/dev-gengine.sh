@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd ~/code/mechabot
+pushd ~/code/
 urxvt -e gengine-env &
 popd
 
