@@ -14,7 +14,7 @@ local eminent = require("eminent")
 local os      = { getenv = os.getenv, setlocale = os.setlocale }
 
 local theme                                     = {}
-theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/copland"
+theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/ggp"
 theme.wallpaper                                 = theme.dir .. "/wall.png"
 theme.font                                      = "xos4 Terminus 8"
 theme.fg_normal                                 = "#BBBBBB"
