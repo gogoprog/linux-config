@@ -10,7 +10,7 @@ local gears   = require("gears")
 local lain    = require("lain")
 local awful   = require("awful")
 local wibox   = require("wibox")
-local eminent = require("eminent")
+--local eminent = require("eminent")
 local os      = { getenv = os.getenv, setlocale = os.setlocale }
 
 local theme                                     = {}
@@ -26,9 +26,9 @@ theme.bg_urgent                                 = "#FFFFFF"
 theme.border_width                              = 1
 theme.border_normal                             = "#141414"
 theme.border_focus                              = "#93B6FF"
-theme.taglist_fg_focus                          = "#FFFFFF"
+theme.taglist_fg_focus                          = "#FFFF00"
 theme.taglist_bg_focus                          = "#111111"
-theme.taglist_bg_normal                         = "#111111"
+theme.taglist_bg_normal                          = "#111111"
 theme.titlebar_bg_normal                        = "#191919"
 theme.titlebar_bg_focus                         = "#262626"
 theme.menu_height                               = 16
@@ -36,8 +36,10 @@ theme.menu_width                                = 130
 theme.tasklist_disable_icon                     = true
 theme.awesome_icon                              = theme.dir .."/icons/awesome.png"
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
-theme.taglist_squares_sel                       = theme.dir .. "/icons/square_unsel.png"
-theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
+theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
+theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_sel.png"
+theme.taglist_squares_sel_empty                 = theme.dir .. "/icons/square_unsel.png"
+theme.taglist_squares_unsel_empty               = theme.dir .. "/icons/square_unsel.png"
 theme.vol                                       = theme.dir .. "/icons/vol.png"
 theme.vol_low                                   = theme.dir .. "/icons/vol_low.png"
 theme.vol_no                                    = theme.dir .. "/icons/vol_no.png"
@@ -94,14 +96,14 @@ local green  = "#8FEB8F"
 
 -- Textclock
 --os.setlocale(os.getenv("LANG")) -- to localize the clock
-local mytextclock = wibox.widget.textclock("<span font='Tamzen 5'> </span>%H:%M ")
+local mytextclock = wibox.widget.textclock("<span> </span>%H:%M ")
 mytextclock.font = theme.font
 
 -- Calendar
 lain.widgets.calendar({
     attach_to = { mytextclock },
     notification_preset = {
-        font = "Tamzen 11",
+        font = theme.font,
         fg   = theme.fg_normal,
         bg   = theme.bg_normal
     }
