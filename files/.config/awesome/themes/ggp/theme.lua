@@ -96,12 +96,15 @@ local green  = "#8FEB8F"
 
 -- Textclock
 --os.setlocale(os.getenv("LANG")) -- to localize the clock
-local mytextclock = wibox.widget.textclock("<span> </span>%H:%M ")
+local mytextclock = wibox.widget.textclock("%H:%M")
 mytextclock.font = theme.font
+
+local mytextdate = wibox.widget.textclock("%d-%m-%y")
+mytextdate.font = theme.font
 
 -- Calendar
 lain.widgets.calendar({
-    attach_to = { mytextclock },
+    attach_to = { mytextdate },
     notification_preset = {
         font = theme.font,
         fg   = theme.fg_normal,
@@ -328,6 +331,7 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
+            awful.widget.launcher({ menu = awful.util.mymainmenu, image = theme.awesome_icon }),
             small_spr,
             s.mylayoutbox,
             first,
@@ -339,11 +343,11 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            wibox.widget.systray(),
+            awful.util.mysystray,
             small_spr,
             --mail.widget,
-            mpdicon,
-            theme.mpd.widget,
+            --mpdicon,
+            --theme.mpd.widget,
             baticon,
             batwidget,
             bar_spr,
@@ -352,6 +356,8 @@ function theme.at_screen_connect(s)
             bar_spr,
             volicon,
             volumewidget,
+            bar_spr,
+            mytextdate,
             bar_spr,
             mytextclock,
         },

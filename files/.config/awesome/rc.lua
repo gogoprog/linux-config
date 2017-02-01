@@ -209,11 +209,18 @@ screen.connect_signal("property::geometry", function(s)
     end
 end)
 -- Create a wibox for each screen and add it
+awful.util.mysystray = wibox.widget.systray()
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
 -- }}}
 
+
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
+    awful.button({ }, 2, function ()
+        local focusedScreen = awful.screen.focused()
+        naughty.notify({ text = "Set systray on screen "..focusedScreen.index })
+        awful.util.mysystray:set_screen (focusedScreen)
+    end),
     awful.button({ }, 3, function () awful.util.mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
